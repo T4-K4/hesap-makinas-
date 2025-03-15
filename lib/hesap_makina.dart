@@ -82,8 +82,13 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(19, 83, 173, 185),
-          title: Text("Matematik Hesaplayıcı"),
+          backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+          title: Center(child: Text("Matematik Hesaplayıcı",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),)),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16),
@@ -144,7 +149,7 @@ class _MyAppState extends State<MyApp> {
           onPressed: () {
             _rand();
           },
-          backgroundColor: const Color.fromARGB(255, 242, 3, 3),
+          backgroundColor: const Color.fromARGB(255, 227, 243, 3),
           child: Icon(Icons.refresh),
         ),
       ),
